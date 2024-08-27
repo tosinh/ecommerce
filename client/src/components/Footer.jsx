@@ -19,29 +19,29 @@ const Footer = () => {
                     <div className='flex flex-col gap-3'>
                         <img className='w-[190px] h-[70x]' src="http://localhost:3000/images/logo.png" alt="logo" />
                         <ul className='flex flex-col gap-2 text-slate-600'>
-                            <li>Address : Rangpur , Kuigram</li>
-                            <li>Phone : 5873458345</li>
-                            <li>Email : farid@gmail.com</li>
+                            <li>Địa chỉ: phường 8, Tp. Đà Lạt</li>
+                            <li>Điện thoại : 0909090909</li>
+                            <li>Email : 211****@dlu.edu.vn</li>
                         </ul>
                     </div>
                 </div>
                 <div className='w-5/12 lg:w-8/12 sm:w-full'>
                     <div className='flex justify-center sm:justify-start sm:mt-6 w-full'>
                         <div>
-                            <h2 className='font-bold text-lg mb-2'>Usefull links</h2>
+                            <h2 className='font-bold text-lg mb-2'>Liên kết</h2>
                             <div className='flex justify-between gap-[80px] lg:gap-[40px]'>
                                 <ul className='flex flex-col gap-2 text-slate-600 text-sm'>
                                     <li>
-                                        <Link>About Us</Link>
+                                        <Link>Giới thiệu</Link>
                                     </li>
                                     <li>
-                                        <Link>About our Shop</Link>
+                                        <Link>Giải quyết tranh chấp</Link>
                                     </li>
                                     <li>
-                                        <Link>Delivery Information</Link>
+                                        <Link>Chính sách bảo mật</Link>
                                     </li>
                                     <li>
-                                        <Link>Privacy Policy</Link>
+                                        <Link>Truyền thông</Link>
                                     </li>
                                     <li>
                                         <Link>Blogs</Link>
@@ -49,19 +49,13 @@ const Footer = () => {
                                 </ul>
                                 <ul className='flex flex-col gap-2 text-slate-600 text-sm'>
                                     <li>
-                                        <Link>About Us</Link>
+                                        <Link>Trung tâm trợ giúp</Link>
                                     </li>
                                     <li>
-                                        <Link>About our Shop</Link>
+                                        <Link>An toàn mua bán</Link>
                                     </li>
                                     <li>
-                                        <Link>Delivery Information</Link>
-                                    </li>
-                                    <li>
-                                        <Link>Privacy Policy</Link>
-                                    </li>
-                                    <li>
-                                        <Link>Blogs</Link>
+                                        <Link>Liên hệ hỗ trợ</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -70,8 +64,8 @@ const Footer = () => {
                 </div>
                 <div className='w-4/12 lg:w-full lg:mt-6'>
                     <div className='w-full flex flex-col justify-start gap-5'>
-                        <h2 className='font-bold text-lg mb-2'>Join Our</h2>
-                        <span>Get Email updates about our latest and shop specials offers</span>
+                        <h2 className='font-bold text-lg mb-2'>Tham gia với chúng tôi</h2>
+                        <span>Nhận thông tin cập nhật qua Email về các ưu đãi đặc biệt và mới nhất của cửa hàng chúng tôi</span>
                         <div className='h-[50px] w-full bg-white border relative'>
                             <input placeholder='Enter your mail' className='h-full bg-transparent w-full px-3 outline-0' type="text" />
                             <button className='h-full absolute right-0 bg-indigo-500 text-white uppercase px-4 font-bold text-sm'>Subscribe</button>
@@ -94,7 +88,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='w-[85%] flex flex-wrap justify-center items-center text-slate-600 mx-auto py-5 text-center'>
-                <span>Copiright ©2023 All rights reserved | mady by <a className='text-blue-500 underline' href="">@Learn with Project</a></span>
+                <span>NoCopiright ©2024 <a className='text-blue-500 underline' href=""></a></span>
             </div>
 
             <div className='hidden fixed md-lg:block w-[50px] bottom-3 h-[110px] right-2 bg-white rounded-full p-2'>

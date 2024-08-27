@@ -47,9 +47,9 @@ const Headers = () => {
                         <ul className='flex justify-start items-center gap-8'>
                             <li className='flex relative justify-center items-center gap-2 text-sm after:absolute after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px]'>
                                 <span><GrMail /></span>
-                                <span>sheikhfarid@gmail.com</span>
+                                <span>211****@dlu.edu.vn</span>
                             </li>
-                            <span>Multi vendor ecommerce</span>
+                            <span>Sàn thương mại điện tử</span>
                         </ul>
                         <div>
                             <div className='flex justify-center items-center gap-10'>
@@ -63,7 +63,7 @@ const Headers = () => {
                                     <img src="http://localhost:3000/images/language.png" alt="" />
                                     <span><MdOutlineKeyboardArrowDown /></span>
                                     <ul className='absolute invisible transition-all to-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-                                        <li>Bangla</li>
+                                        <li>VietNamese</li>
                                         <li>English</li>
                                     </ul>
                                 </div>
@@ -98,19 +98,19 @@ const Headers = () => {
                             <div className='flex justify-between md-lg:justify-center items-center flex-wrap pl-8'>
                                 <ul className='flex justify-start items-start gap-8 text-sm font-bold uppercase md-lg:hidden'>
                                     <li>
-                                        <Link className={`p-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
+                                        <Link to='/' className={`p-2 block ${pathname === '/' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Home</Link>
                                     </li>
                                     <li>
                                         <Link to='/shops' className={`p-2 block ${pathname === '/shop' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Shop</Link>
                                     </li>
                                     <li>
-                                        <Link className={`p-2 block ${pathname === '/blog' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Blog</Link>
+                                        <Link to='/' className={`p-2 block ${pathname === '/blog' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Blog</Link>
                                     </li>
                                     <li>
-                                        <Link className={`p-2 block ${pathname === '/about' ? 'text-[#7fad39]' : 'text-slate-600'}`}>About</Link>
+                                        <Link to='/' className={`p-2 block ${pathname === '/about' ? 'text-[#7fad39]' : 'text-slate-600'}`}>About</Link>
                                     </li>
                                     <li>
-                                        <Link className={`p-2 block ${pathname === '/contact' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Contact</Link>
+                                        <Link to='/' className={`p-2 block ${pathname === '/contact' ? 'text-[#7fad39]' : 'text-slate-600'}`}>Contact</Link>
                                     </li>
                                 </ul>
                                 <div className='flex md-lg:hidden justify-center items-center gap-5'>
@@ -153,7 +153,7 @@ const Headers = () => {
                                 <img src="http://localhost:3000/images/language.png" alt="" />
                                 <span><MdOutlineKeyboardArrowDown /></span>
                                 <ul className='absolute invisible transition-all to-12 rounded-sm duration-200 text-white p-2 w-[100px] flex flex-col gap-3 group-hover:visible group-hover:top-6 group-hover:bg-black z-10'>
-                                    <li>Bangla</li>
+                                    <li>VietNamese</li>
                                     <li>English</li>
                                 </ul>
                             </div>
@@ -195,16 +195,16 @@ const Headers = () => {
                                 <span><IoIosCall /></span>
                             </div>
                             <div className='flex justify-end flex-col gap-1'>
-                                <h2 className='text-sm font-medium text-slate-700'>+8803242343243</h2>
-                                <span className='text-xs'>support 33/45 time</span>
+                                <h2 className='text-sm font-medium text-slate-700'>+84000000000</h2>
+                                <span className='text-xs'>Hỗ trợ 24/7</span>
                             </div>
                         </div>
                         <ul className='flex flex-col justify-start items-start gap-3 text-[#1c1c1c]'>
                             <li className='flex justify-start items-center gap-2  text-sm'>
                                 <span><GrMail /></span>
-                                <span>learnwithproject@gmail.com</span>
+                                <span>211*****@dlu.edu.vn</span>
                             </li>
-                            <span className='text-sm'>Multi vendor ecommerce</span>
+                            <span className='text-sm'>Sàn thương mại điện tử</span>
                         </ul>
                     </div>
                 </div>
@@ -216,7 +216,7 @@ const Headers = () => {
                             <div onClick={() => setCategoryShow(!categoryShow)} className='h-[50px] bg-violet-400 text-white flex justify-center md-lg:justify-between md-lg:px-6 items-center gap-3 font-bold text-md cursor-pointer'>
                                 <div className="flex justify-center items-center gap-3">
                                     <span><FaList /></span>
-                                    <span>All Category</span>
+                                    <span>Danh mục</span>
                                 </div>
                                 <span className='pt-1'><MdOutlineKeyboardArrowDown /></span>
                             </div>
@@ -242,14 +242,14 @@ const Headers = () => {
                                 <div className='flex border h-[50px] items-center relative gap-5'>
                                     <div className='relative after:absolute after:h-[25px] after:w-[1px] after:bg-[#afafaf] after:-right-[15px] md:hidden'>
                                         <select onChange={(e) => setCategory(e.target.value)} className='w-[150px] text-slate-600 font-semibold bg-transparent px-2 h-full outline-0 border-none' name="" id="">
-                                            <option value="">Select category</option>
+                                            <option value="">Chọn danh mục</option>
                                             {
                                                 categorys.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
                                             }
                                         </select>
                                     </div>
-                                    <input className='w-full relative bg-transparent text-slate-500 outline-0 px-3 h-full' onChange={(e) => setSearchValue(e.target.value)} type="text" name="" id="" placeholder='what do you need' />
-                                    <button onClick={search} className='bg-violet-400 right-0 absolute px-8 h-full font-semibold uppercase text-white'>Search</button>
+                                    <input className='w-full relative bg-transparent text-slate-500 outline-0 px-3 h-full' onChange={(e) => setSearchValue(e.target.value)} type="text" name="" id="" placeholder='Tìm kiếm sản phẩm' />
+                                    <button onClick={search} className='bg-violet-400 right-0 absolute px-8 h-full font-semibold uppercase text-white'>Tìm kiếm</button>
                                 </div>
                             </div>
                             <div className='w-4/12 block md-lg:hidden pl-2 md-lg:w-full md-lg:pl-0'>
@@ -258,8 +258,8 @@ const Headers = () => {
                                         <span><IoIosCall /></span>
                                     </div>
                                     <div className='flex justify-end flex-col gap-1'>
-                                        <h2 className='text-md font-medium text-slate-700'>+8803242343243</h2>
-                                        <span className='text-sm'>support 33/45 time</span>
+                                        <h2 className='text-md font-medium text-slate-700'>+84000000000</h2>
+                                        <span className='text-sm'>Hỗ trợ 24/7</span>
                                     </div>
                                 </div>
                             </div>
