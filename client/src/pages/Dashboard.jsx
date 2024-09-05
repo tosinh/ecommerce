@@ -47,15 +47,15 @@ const Dashboard = () => {
                             <ul className='py-2 text-slate-600 px-4'>
                                 <li className='flex justify-start items-center gap-2 py-2'>
                                     <span className='text-xl'><RxDashboard /></span>
-                                    <Link to='/dashboard' className='block'>Dashboard</Link>
+                                    <Link to='/dashboard' className='block'>Quản lý đơn hàng</Link>
                                 </li>
                                 <li className='flex justify-start items-center gap-2 py-2'>
                                     <span className='text-xl'><RiProductHuntLine /></span>
-                                    <Link to='/dashboard/my-orders' className='block'>My Orders</Link>
+                                    <Link to='/dashboard/my-orders' className='block'>Đơn hàng của tôi</Link>
                                 </li>
                                 <li className='flex justify-start items-center gap-2 py-2'>
                                     <span className='text-xl'><BsHeart /></span>
-                                    <Link to='/dashboard/my-wishlist' className='block'>Wishlist</Link>
+                                    <Link to='/dashboard/my-wishlist' className='block'>Danh sách yêu thích</Link>
                                 </li>
                                 <li className='flex justify-start items-center gap-2 py-2'>
                                     <span className='text-xl'><BsChat /></span>
@@ -64,11 +64,11 @@ const Dashboard = () => {
 
                                 <li className='flex justify-start items-center gap-2 py-2'>
                                     <span className='text-xl'><TfiLock /></span>
-                                    <Link to='/dashboard/chage-password' className='block'>Change Password</Link>
+                                    <Link to='/dashboard/chage-password' className='block'>Thay đổi mật khẩu</Link>
                                 </li>
                                 <li onClick={logout} className='flex justify-start items-center gap-2 py-2 cursor-pointer'>
                                     <span className='text-xl'><BiLogInCircle /></span>
-                                    <div className='block'>Logout</div>
+                                    <div className='block'>Đăng xuất</div>
                                 </li>
                             </ul>
                         </div>

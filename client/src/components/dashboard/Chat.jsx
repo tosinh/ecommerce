@@ -168,7 +168,7 @@ const Chat = () => {
                                 </div>
                             </div>
                         </div> : <div onClick={()=>setShow(true)} className='w-full flex justify-center items-center text-lg ont-bold text-slate-600 h-[400px]'>
-                            <span>select seller</span>
+                            <span>Chọn người bán</span>
                         </div>
                     }
                 </div>

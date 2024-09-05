@@ -58,11 +58,11 @@ const Card = () => {
                 <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
                     <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
                         <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
-                            <h2 className='text-3xl font-bold'>Shop.my</h2>
+                            <h2 className='text-3xl font-bold'>Hải tốt</h2>
                             <div className='flex justify-center items-center gap-2 text-2xl w-full'>
                                 <Link to='/'>Home</Link>
                                 <span className='pt-2'><MdOutlineKeyboardArrowRight /></span>
-                                <span>Card</span>
+                                <span>Giỏ hàng</span>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Card = () => {
                                 <div className='pr-3 md-lg:pr-0'>
                                     <div className='flex flex-col gap-3'>
                                         <div className='bg-white p-4'>
-                                            <h2 className='text-md text-green-500 font-semibold'>Stock Products {card_products.length}</h2>
+                                            <h2 className='text-md text-green-500 font-semibold'>Sản phẩm trong giỏ hàng {card_products.length}</h2>
                                         </div>
                                         {
                                             card_products.map((p, i) => <div className='flex bg-white p-4 flex-col gap-2'>
@@ -157,24 +157,24 @@ const Card = () => {
                                 <div className='pl-3 md-lg:pl-0 md-lg:mt-5'>
                                     {
                                         card_products.length > 0 && <div className='bg-white p-3 text-slate-600 flex flex-col gap-3'>
-                                            <h2 className='text-xl font-bold'>Order Summary</h2>
+                                            <h2 className='text-xl font-bold'>Đơn hàng</h2>
                                             <div className='flex justify-between items-center'>
-                                                <span>{buy_product_item} Item</span>
+                                                <span>{buy_product_item} sản phấm</span>
                                                 <span>${price}</span>
                                             </div>
                                             <div className='flex justify-between items-center'>
-                                                <span>Shipping Fee</span>
+                                                <span>Phí vận chuyển</span>
                                                 <span>${shipping_fee}</span>
                                             </div>
                                             <div className='flex gap-2'>
-                                                <input className='w-full px-3 py-2 border border-slate-200 outline-0 focus:border-green-500 rounded-sm' type="text" placeholder='Input Vauchar Coupon' />
-                                                <button className='px-5 py-[1px] bg-blue-500 text-white rounded-sm uppercase text-sm'>Apply</button>
+                                                <input className='w-full px-3 py-2 border border-slate-200 outline-0 focus:border-green-500 rounded-sm' type="text" placeholder='Nhập mã' />
+                                                <button className='px-5 py-[1px] bg-blue-500 text-white rounded-sm uppercase text-sm'>Áp dụng</button>
                                             </div>
                                             <div className='flex justify-between items-center'>
-                                                <span>Total</span>
+                                                <span>Tổng cộng</span>
                                                 <span className='text-lg text-orange-500'>${price + shipping_fee}</span>
                                             </div>
-                                            <button onClick={redirect} className='px-5 py-[6px] rounded-sm hover:shadow-orange-500/20 hover:shadow-lg bg-orange-500 text-sm text-white uppercase'>Proceed to checkout {buy_product_item}</button>
+                                            <button onClick={redirect} className='px-5 py-[6px] rounded-sm hover:shadow-orange-500/20 hover:shadow-lg bg-orange-500 text-sm text-white uppercase'>Thanh toán {buy_product_item} sản phẩm</button>
                                         </div>
                                     }
                                 </div>

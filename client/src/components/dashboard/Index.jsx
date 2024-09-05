@@ -38,7 +38,7 @@ const Index = () => {
                     </div>
                     <div className='flex flex-col justify-start items-start text-slate-600'>
                         <h2 className='text-3xl font-bold'>{totalOrder}</h2>
-                        <span>Orders</span>
+                        <span>Đơn đã đặt</span>
                     </div>
                 </div>
                 <div className='flex justify-center items-center p-5 bg-white rounded-md gap-5'>
@@ -49,7 +49,7 @@ const Index = () => {
                     </div>
                     <div className='flex flex-col justify-start items-start text-slate-600'>
                         <h2 className='text-3xl font-bold'>{pendingOrder}</h2>
-                        <span>Pending Orders</span>
+                        <span>Chờ xác nhận</span>
                     </div>
                 </div>
                 <div className='flex justify-center items-center p-5 bg-white rounded-md gap-5'>
@@ -60,22 +60,22 @@ const Index = () => {
                     </div>
                     <div className='flex flex-col justify-start items-start text-slate-600'>
                         <h2 className='text-3xl font-bold'>{cancelledOrder}</h2>
-                        <span>Cancelled Orders</span>
+                        <span>Đơn đã hủy</span>
                     </div>
                 </div>
             </div>
             <div className='bg-white p-4 mt-5 rounded-md'>
-                <h2 className='text-lg font-semibold text-slate-600'>Recent Orders</h2>
+                <h2 className='text-lg font-semibold text-slate-600'>Đơn hàng gần đây</h2>
                 <div className='pt-4'>
                     <div className='relative overflow-x-auto'>
                         <table className='w-full text-sm text-left text-gray-500'>
                             <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
                                 <tr>
-                                    <th scope='col' className='px-6 py-3'>Order Id</th>
-                                    <th scope='col' className='px-6 py-3'>Price</th>
-                                    <th scope='col' className='px-6 py-3'>Payment status</th>
-                                    <th scope='col' className='px-6 py-3'>Order status</th>
-                                    <th scope='col' className='px-6 py-3'>Action</th>
+                                    <th scope='col' className='px-6 py-3'>Id</th>
+                                    <th scope='col' className='px-6 py-3'>Giá</th>
+                                    <th scope='col' className='px-6 py-3'>Tình trạng thanh toán</th>
+                                    <th scope='col' className='px-6 py-3'>Tình trạng đơn hàng</th>
+                                    <th scope='col' className='px-6 py-3'>Hoạt đọng</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -87,10 +87,10 @@ const Index = () => {
                                         <td scope='row' className='px-6 py-4 font-medium whitespace-nowrap'>{o.delivery_status}</td>
                                         <td scope='row' className='px-6 py-4'>
                                             <Link to={`/dashboard/order/details/${o._id}`}>
-                                                <span className='bg-green-100 text-green-800 text-sm font-normal mr-2 px-2.5 py-[1px] rounded'>view</span>
+                                                <span className='bg-green-100 text-green-800 text-sm font-normal mr-2 px-2.5 py-[1px] rounded'>Xem</span>
                                             </Link>
                                             {
-                                                o.payment_status !== 'paid' && <span onClick={() => redirect(o)} className='bg-green-100 text-green-800 text-sm font-normal mr-2 px-2.5 py-[1px] rounded cursor-pointer'>Pay Now</span>
+                                                o.payment_status !== 'paid' && <span onClick={() => redirect(o)} className='bg-green-100 text-green-800 text-sm font-normal mr-2 px-2.5 py-[1px] rounded cursor-pointer'>Thanh toán ngay</span>
                                             }
                                         </td>
                                     </tr>)

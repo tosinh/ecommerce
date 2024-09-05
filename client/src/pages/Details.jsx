@@ -157,7 +157,7 @@ const Details = () => {
                 <div className='absolute left-0 top-0 w-full h-full bg-[#2422228a]'>
                     <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
                         <div className='flex flex-col justify-center gap-1 items-center h-full w-full text-white'>
-                            <h2 className='text-3xl font-bold'>Shop.my</h2>
+                            <h2 className='text-3xl font-bold'>Hải tốt</h2>
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@ const Details = () => {
                                     product.discount !== 0 ? <>
                                         <h2 className='line-through'>${product.price}</h2>
                                         <h2>${product.price - Math.floor((product.price * product.discount) / 100)} (-{product.discount}%)</h2>
-                                    </> : <h2>Price : ${product.price}</h2>
+                                    </> : <h2>Gias : ${product.price}</h2>
                                 }
                             </div>
                             <div className='text-slate-600'>
@@ -231,7 +231,7 @@ const Details = () => {
                                             <div onClick={inc} className='px-6 cursor-pointer'>+</div>
                                         </div>
                                         <div>
-                                            <button onClick={add_card} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-purple-500/40 bg-purple-500 text-white'>Add To Card</button>
+                                            <button onClick={add_card} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-purple-500/40 bg-purple-500 text-white'>Thêm vào giỏ hàng</button>
                                         </div>
                                     </> : ''
                                 }
@@ -243,12 +243,12 @@ const Details = () => {
                             </div>
                             <div className='flex py-5 gap-5'>
                                 <div className='w-[150px] text-black font-bold text-xl flex flex-col gap-5'>
-                                    <span>Availability</span>
-                                    <span>Share on</span>
+                                    <span>Số lượng còn</span>
+                                    <span>Chia sẻ</span>
                                 </div>
                                 <div className='flex flex-col gap-5'>
                                     <span className={`text-${product.stock ? 'green' : 'red'}-500`}>
-                                        {product.stock ? `In Stock(${product.stock})` : 'Out of Stock'}
+                                        {product.stock ? `Còn ${product.stock}` : 'Hết hàng'}
                                     </span>
                                     <ul className='flex justify-start items-center gap-3'>
                                         <li>
@@ -268,9 +268,9 @@ const Details = () => {
                             </div>
                             <div className='flex gap-3'>
                                 {
-                                    product.stock ? <button onClick={buy} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-emerald-500/40 bg-emerald-500 text-white'>Buy Now</button> : ""
+                                    product.stock ? <button onClick={buy} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-emerald-500/40 bg-emerald-500 text-white'>Mua</button> : ""
                                 }
-                                <Link to={`/dashboard/chat/${product.sellerId}`} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-lime-500/40 bg-lime-500 text-white block'>Chat Seller</Link>
+                                <Link to={`/dashboard/chat/${product.sellerId}`} className='px-8 py-3 h-[50px] cursor-pointer hover:shadow-lg hover:shadow-lime-500/40 bg-lime-500 text-white block'>Nhắn tin</Link>
                             </div>
                         </div>
                     </div>
@@ -282,8 +282,8 @@ const Details = () => {
                         <div className='w-[72%] md-lg:w-full'>
                             <div className='pr-4 md-lg:pr-0'>
                                 <div className='grid grid-cols-2'>
-                                    <button onClick={() => setState('reviews')} className={`py-1 hover:text-white px-5 hover:bg-green-500 ${state === 'reviews' ? 'bg-green-500 text-white' : 'bg-slate-200 text-slate-700'} rounded-sm`}>Reviews</button>
-                                    <button onClick={() => setState('description')} className={`py-1 px-5 hover:text-white hover:bg-green-500 ${state === 'description' ? 'bg-green-500 text-white' : 'bg-slate-200 text-slate-700'} rounded-sm`}>Description</button>
+                                    <button onClick={() => setState('reviews')} className={`py-1 hover:text-white px-5 hover:bg-green-500 ${state === 'reviews' ? 'bg-green-500 text-white' : 'bg-slate-200 text-slate-700'} rounded-sm`}>Đánh giá</button>
+                                    <button onClick={() => setState('description')} className={`py-1 px-5 hover:text-white hover:bg-green-500 ${state === 'description' ? 'bg-green-500 text-white' : 'bg-slate-200 text-slate-700'} rounded-sm`}>Mô tả</button>
                                 </div>
                                 <div>
                                     {
@@ -295,7 +295,7 @@ const Details = () => {
                         <div className='w-[28%] md-lg:w-full'>
                             <div className='pl-4 md-lg:pl-0'>
                                 <div className='px-3 py-2 text-slate-600 bg-slate-200'>
-                                    <h2> From {product.shopName}</h2>
+                                    <h2> Từ {product.shopName}</h2>
                                 </div>
                                 <div className='flex flex-col gap-5 mt-3 border p-3'>
                                     {
@@ -327,7 +327,7 @@ const Details = () => {
             </section>
             <section>
                 <div className='w-[85%] md:w-[80%] sm:w-[90%] lg:w-[90%] h-full mx-auto'>
-                    <h2 className='text-2xl py-8 text-slate-600'>Related Products</h2>
+                    <h2 className='text-2xl py-8 text-slate-600'>Sản phảm liên quan</h2>
                     <div>
                         <Swiper
                             slidesPerView='auto'

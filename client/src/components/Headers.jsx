@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GrMail } from 'react-icons/gr'
 import { IoIosCall } from 'react-icons/io'
+import { FaSearch } from "react-icons/fa";
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import { FaLinkedinIn, FaFacebookF, FaUser, FaLock, FaList } from 'react-icons/fa'
 import { AiOutlineTwitter, AiFillGithub, AiFillHeart, AiFillShopping } from 'react-icons/ai'
@@ -49,7 +50,7 @@ const Headers = () => {
                                 <span><GrMail /></span>
                                 <span>211****@dlu.edu.vn</span>
                             </li>
-                            <span>Sàn thương mại điện tử</span>
+                            <span>Sàn thương mại điện tử mua bán đồ cũ</span>
                         </ul>
                         <div>
                             <div className='flex justify-center items-center gap-10'>
@@ -213,7 +214,7 @@ const Headers = () => {
                 <div className='flex w-full flex-wrap md-lg:gap-8'>
                     <div className='w-3/12 md-lg:w-full'>
                         <div className='bg-white relative'>
-                            <div onClick={() => setCategoryShow(!categoryShow)} className='h-[50px] bg-violet-400 text-white flex justify-center md-lg:justify-between md-lg:px-6 items-center gap-3 font-bold text-md cursor-pointer'>
+                            <div onClick={() => setCategoryShow(!categoryShow)} className='h-[50px] bg-violet-400 text-white flex justify-center md-lg:justify-between md-lg:px-6 items-center gap-3 font-bold text-md cursor-pointer rounded-full'>
                                 <div className="flex justify-center items-center gap-3">
                                     <span><FaList /></span>
                                     <span>Danh mục</span>
@@ -239,17 +240,17 @@ const Headers = () => {
                     <div className='w-9/12 pl-8 md-lg:pl-0 md-lg:w-full'>
                         <div className='flex flex-wrap w-full justify-between items-center md-lg:gap-6'>
                             <div className='w-8/12 md-lg:w-full'>
-                                <div className='flex border h-[50px] items-center relative gap-5'>
-                                    <div className='relative after:absolute after:h-[25px] after:w-[1px] after:bg-[#afafaf] after:-right-[15px] md:hidden'>
+                                <div className='flex border h-[50px] items-center relative gap-5 rounded-full'>
+                                    {/* <div className='relative after:absolute after:h-[25px] after:w-[1px] after:bg-[#afafaf] after:-right-[15px] md:hidden'>
                                         <select onChange={(e) => setCategory(e.target.value)} className='w-[150px] text-slate-600 font-semibold bg-transparent px-2 h-full outline-0 border-none' name="" id="">
                                             <option value="">Chọn danh mục</option>
                                             {
                                                 categorys.map((c, i) => <option key={i} value={c.name}>{c.name}</option>)
                                             }
                                         </select>
-                                    </div>
+                                    </div> */}
                                     <input className='w-full relative bg-transparent text-slate-500 outline-0 px-3 h-full' onChange={(e) => setSearchValue(e.target.value)} type="text" name="" id="" placeholder='Tìm kiếm sản phẩm' />
-                                    <button onClick={search} className='bg-violet-400 right-0 absolute px-8 h-full font-semibold uppercase text-white'>Tìm kiếm</button>
+                                    <button onClick={search} className='bg-violet-400 right-0 absolute px-8 h-full font-semibold uppercase text-white rounded-full'><FaSearch /></button>
                                 </div>
                             </div>
                             <div className='w-4/12 block md-lg:hidden pl-2 md-lg:w-full md-lg:pl-0'>
