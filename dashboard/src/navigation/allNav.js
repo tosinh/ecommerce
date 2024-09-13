@@ -7,84 +7,84 @@ import { RiProductHuntLine } from 'react-icons/ri'
 export const allNav = [
     {
         id: 1,
-        title: 'Dashboard',
+        title: 'Trang tổng quan',
         icon: <AiFillDashboard />,
         role: 'admin',
         path: '/admin/dashboard'
     },
     {
         id: 2,
-        title: 'Orders',
+        title: 'Đơn đặt hàng',
         icon: <AiOutlineShoppingCart />,
         role: 'admin',
         path: '/admin/dashboard/orders'
     },
     {
         id: 3,
-        title: 'Category',
+        title: 'Danh mục',
         icon: <BiCategory />,
         role: 'admin',
         path: '/admin/dashboard/category'
     },
     {
         id: 4,
-        title: 'Sellers',
+        title: 'Người bán',
         icon: <FiUsers />,
         role: 'admin',
         path: '/admin/dashboard/sellers'
     },
     {
         id: 5,
-        title: 'Payment request',
+        title: 'Yêu cầu thanh toán',
         icon: <BsCurrencyDollar />,
         role: 'admin',
         path: '/admin/dashboard/payment-request'
     },
     {
         id: 6,
-        title: 'Deactive Sellers',
+        title: 'Người bán không hoạt động',
         icon: <FiUsers />,
         role: 'admin',
         path: '/admin/dashboard/deactive-sellers'
     },
     {
         id: 7,
-        title: 'Sellers Request',
+        title: 'Yêu cầu của người bán',
         icon: <BiLoaderCircle />,
         role: 'admin',
         path: '/admin/dashboard/sellers-request'
     },
     {
         id: 8,
-        title: 'Chat Seller',
+        title: 'Trò chuyện với người bán',
         icon: <CiChat1 />,
         role: 'admin',
         path: '/admin/dashboard/chat-sellers'
     },
     {
         id: 9,
-        title: 'Dashboard',
+        title: 'Trang tổng quan',
         icon: <AiFillDashboard />,
         role: 'seller',
         path: '/seller/dashboard'
     },
     {
         id: 10,
-        title: 'Add Product',
+        title: 'Thêm sản phẩm',
         icon: <AiOutlinePlus />,
         role: 'seller',
         path: '/seller/dashboard/add-product'
     },
     {
         id: 11,
-        title: 'All Product',
+        title: 'Tất cả sản phẩm',
         icon: <RiProductHuntLine />,
         role: 'seller',
         path: '/seller/dashboard/products'
     },
     {
         id: 11,
-        title: 'All Banner',
+        title: 'Tất cả Banner',
         icon: <RiProductHuntLine />,
         role: 'seller',
         path: '/seller/dashboard/banners'
@@ -92,42 +92,42 @@ export const allNav = [
 
     {
         id: 12,
-        title: 'Discount Product',
+        title: 'Sản phẩm giảm giá',
         icon: <RiProductHuntLine />,
         role: 'seller',
         path: '/seller/dashboard/discount-products'
     },
     {
         id: 13,
-        title: 'Orders',
+        title: 'Đơn đặt hàng',
         icon: <AiOutlineShoppingCart />,
         role: 'seller',
         path: '/seller/dashboard/orders'
     },
     {
         id: 14,
-        title: 'Payments',
+        title: 'Thanh toán',
         icon: <BsCurrencyDollar />,
         role: 'seller',
         path: '/seller/dashboard/payments'
     },
     {
         id: 15,
-        title: 'Chat Customer',
+        title: 'Trò chuyện với khách hàng',
         icon: <BsChat />,
         role: 'seller',
         path: '/seller/dashboard/chat-customer'
     },
     {
         id: 16,
-        title: 'Chat Support',
+        title: 'Hỗ trợ trò chuyện',
         icon: <CiChat1 />,
         role: 'seller',
         path: '/seller/dashboard/chat-support'
     },
     {
         id: 17,
-        title: 'Profile',
+        title: 'Hồ sơ',
         icon: <FiUsers />,
         role: 'seller',
         path: '/seller/dashboard/profile'

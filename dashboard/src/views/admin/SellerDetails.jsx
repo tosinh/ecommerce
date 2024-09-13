@@ -37,7 +37,7 @@ const SellerDetails = () => {
                         <div className='w-3/12 flex justify-center items-center py-3'>
                             <div>
                                 {
-                                    seller?.image ? <img className='w-full h-[230px]' src="http://localhost:3000/images/admin.jpg" alt="" /> : <span>Ảnh chưa được Upload</span>
+                                    seller?.image ? <img className='w-full h-[230px]' src="http://localhost:3000/images/admin.jpg" alt="" /> : <span>Ảnh chưa được cập nhật</span>
                                 }
 
                             </div>
@@ -102,10 +102,10 @@ const SellerDetails = () => {
                             <div className='flex gap-4 py-3'>
                                 <select value={status} onChange={(e) => setStatus(e.target.value)} className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]' name="" required id="">
                                     <option value="">--Chọn trạng thái--</option>
-                                    <option value="active">Active</option>
-                                    <option value="deactive">Deactive</option>
+                                    <option value="active">Hoạt động</option>
+                                    <option value="deactive">Không hoạt động</option>
                                 </select>
-                                <button className='bg-blue-500 hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-md px-7 py-2 w-[170px] '>Gửi (submit)</button>
+                                <button className='bg-blue-500 hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-md px-7 py-2 w-[170px] '>Lưu</button>
                             </div>
                         </form>
                     </div>

@@ -44,7 +44,7 @@ const Sellers = () => {
                                 <th scope='col' className='py-3 px-4'>Tên Shop</th>
                                 <th scope='col' className='py-3 px-4'>Trạng thái thanh toán</th>
                                 <th scope='col' className='py-3 px-4'>Email</th>
-                                <th scope='col' className='py-3 px-4'>Quận</th>
+                                <th scope='col' className='py-3 px-4'>Vai trò</th>
                                 <th scope='col' className='py-3 px-4'>Huyện</th>
                                 <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>

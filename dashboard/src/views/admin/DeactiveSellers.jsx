@@ -46,7 +46,7 @@ const DeactiveSellers = () => {
                                 <th scope='col' className='py-3 px-4'>Tên Shop</th>
                                 <th scope='col' className='py-3 px-4'>Trạng thái thanh toán</th>
                                 <th scope='col' className='py-3 px-4'>Email</th>
-                                <th scope='col' className='py-3 px-4'>Quận</th>
+                                <th scope='col' className='py-3 px-4'>Chức vụ</th>
                                 <th scope='col' className='py-3 px-4'>Huyện</th>
                                 <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>

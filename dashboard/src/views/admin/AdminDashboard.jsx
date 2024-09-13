@@ -32,15 +32,15 @@ const AdminDashboard = () => {
     const state = {
         series: [
             {
-                name: "Orders",
+                name: "Đơn đặt hàng",
                 data: [34, 65, 34, 65, 34, 34, 34, 56, 23, 67, 23, 45]
             },
             {
-                name: "Revenue",
+                name: "Doanh thu",
                 data: [34, 32, 45, 32, 34, 34, 43, 56, 65, 67, 45, 78]
             },
             {
-                name: "Sellers",
+                name: "Người bán",
                 data: [78, 32, 34, 54, 65, 34, 54, 21, 54, 43, 45, 43]
             }
         ],
@@ -65,7 +65,7 @@ const AdminDashboard = () => {
                 dashArray: 0
             },
             xaxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apl', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                categories: ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12']
             },
             legend: {
                 position: 'top'
@@ -74,7 +74,7 @@ const AdminDashboard = () => {
                 {
                     breakpoint: 565,
                     yaxis: {
-                        categories: ['Jan', 'Feb', 'Mar', 'Apl', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+                        categories: ['T1', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'T8', 'T9', 'T10', 'T11', 'T12']
                     },
                     options: {
                         plotOptions: {
@@ -139,7 +139,7 @@ const AdminDashboard = () => {
                 <div className='w-full lg:w-5/12 lg:pl-4 mt-6 lg:mt-0'>
                     <div className='w-full bg-[#283046] p-4 rounded-md text-[#d0d2d6]'>
                         <div className='flex justify-between items-center'>
-                            <h2 className='font-semibold text-lg text-[#d0d2d6] pb-3'>Tin nhắn gần đây từ seller</h2>
+                            <h2 className='font-semibold text-lg text-[#d0d2d6] pb-3'>Tin nhắn gần đây từ người bán</h2>
                             <Link className='font-semibold text-sm text-[#d0d2d6]'>Xem tất cả</Link>
                         </div>
                         <div className='flex flex-col gap-2 pt-6 text-[#d0d2d6]'>
@@ -181,7 +181,7 @@ const AdminDashboard = () => {
                                 <th scope='col' className='py-3 px-4'>Giá</th>
                                 <th scope='col' className='py-3 px-4'>Trạng thái thanh toán</th>
                                 <th scope='col' className='py-3 px-4'>Trạng thái đơn hàng</th>
-                                <th scope='col' className='py-3 px-4'>Active</th>
+                                <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -196,7 +196,7 @@ const AdminDashboard = () => {
                                         <span>{d.payment_status}</span>
                                     </td>
                                     <td scope='row' className='py-3 px-4 font-medium whitespace-nowrap'>
-                                        <Link to={`/admin/dashboard/order/details/${d._id}`}>view</Link>
+                                        <Link to={`/admin/dashboard/order/details/${d._id}`}>Xem</Link>
                                     </td>
                                 </tr>)
                             }

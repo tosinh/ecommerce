@@ -62,7 +62,7 @@ const OrderDetails = () => {
                                     <h2>Trạng thái thanh toán : </h2>
                                     <span className='text-base'>{order.payment_status}</span>
                                 </div>
-                                <span>Price : ${order.price}</span>
+                                <span>Giá : ${order.price}</span>
                                 <div className='mt-4 flex flex-col gap-8'>
                                     <div className='text-[#d0d2d6]'>
                                         {
@@ -71,9 +71,9 @@ const OrderDetails = () => {
                                                 <div>
                                                     <h2>{p.name}</h2>
                                                     <p>
-                                                        <span>Brand : </span>
+                                                        <span>Thương hiệu : </span>
                                                         <span>{p.brand} </span>
-                                                        <span className='text-lg'>Số lượng : {p.quantity}</span>
+                                                        <span className='text-lg'>| Số lượng : {p.quantity}</span>
                                                     </p>
                                                 </div>
                                             </div>)
@@ -97,9 +97,9 @@ const OrderDetails = () => {
                                                     <div>
                                                         <h2>{p.name}</h2>
                                                         <p>
-                                                            <span>Brand : </span>
+                                                            <span>Thương hiệu : </span>
                                                             <span>{p.brand} </span>
-                                                            <span className='text-lg'>Số lượng : {p.quantity}</span>
+                                                            <span className='text-lg'>| Số lượng : {p.quantity}</span>
                                                         </p>
                                                     </div>
                                                 </div>)

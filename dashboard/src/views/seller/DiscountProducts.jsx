@@ -16,15 +16,15 @@ const DiscountProducts = () => {
                     <table className='w-full text-sm text-left text-[#d0d2d6]'>
                         <thead className='text-sm text-[#d0d2d6] uppercase border-b border-slate-700'>
                             <tr>
-                                <th scope='col' className='py-3 px-4'>No</th>
-                                <th scope='col' className='py-3 px-4'>Image</th>
-                                <th scope='col' className='py-3 px-4'>Name</th>
-                                <th scope='col' className='py-3 px-4'>Category</th>
-                                <th scope='col' className='py-3 px-4'>Brand</th>
-                                <th scope='col' className='py-3 px-4'>Price</th>
-                                <th scope='col' className='py-3 px-4'>Discount</th>
-                                <th scope='col' className='py-3 px-4'>Stock</th>
-                                <th scope='col' className='py-3 px-4'>Action</th>
+                                <th scope='col' className='py-3 px-4'>Stt</th>
+                                <th scope='col' className='py-3 px-4'>HÌnh ảnh</th>
+                                <th scope='col' className='py-3 px-4'>Tên</th>
+                                <th scope='col' className='py-3 px-4'>Danh mục</th>
+                                <th scope='col' className='py-3 px-4'>Thương hiệu</th>
+                                <th scope='col' className='py-3 px-4'>Giá</th>
+                                <th scope='col' className='py-3 px-4'>Giảm giá</th>
+                                <th scope='col' className='py-3 px-4'>Kho</th>
+                                <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>
                         </thead>
                         <tbody>

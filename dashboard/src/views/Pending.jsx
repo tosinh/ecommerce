@@ -2,7 +2,9 @@ import React from 'react'
 
 const Pending = () => {
   return (
-    <div>Pending</div>
+    <div>
+      <img src="http://localhost:3001/images/pending.png" alt="pending" />
+    </div>
   )
 }
 

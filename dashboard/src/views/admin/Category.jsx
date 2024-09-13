@@ -142,7 +142,7 @@ const Category = () => {
                                 <div className='mt-4'>
                                     <button disabled={loader ? true : false} className='bg-blue-500 w-full hover:shadow-blue-500/20 hover:shadow-lg text-white rounded-md px-7 py-2 mb-3'>
                                         {
-                                            loader ? <PropagateLoader color='#fff' cssOverride={overrideStyle} /> : 'Add Category'
+                                            loader ? <PropagateLoader color='#fff' cssOverride={overrideStyle} /> : 'Thêm danh mục'
                                         }
                                     </button>
                                 </div>
