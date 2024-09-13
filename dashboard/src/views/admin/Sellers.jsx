@@ -38,15 +38,15 @@ const Sellers = () => {
                     <table className='w-full text-sm text-left text-[#d0d2d6]'>
                         <thead className='text-xs text-[#d0d2d6] uppercase border-b border-slate-700'>
                             <tr>
-                                <th scope='col' className='py-3 px-4'>No</th>
-                                <th scope='col' className='py-3 px-4'>Image</th>
-                                <th scope='col' className='py-3 px-4'>Name</th>
-                                <th scope='col' className='py-3 px-4'>Shop Name</th>
-                                <th scope='col' className='py-3 px-4'>Payment Status</th>
+                                <th scope='col' className='py-3 px-4'>STT</th>
+                                <th scope='col' className='py-3 px-4'>Ảnh</th>
+                                <th scope='col' className='py-3 px-4'>Tên</th>
+                                <th scope='col' className='py-3 px-4'>Tên Shop</th>
+                                <th scope='col' className='py-3 px-4'>Trạng thái thanh toán</th>
                                 <th scope='col' className='py-3 px-4'>Email</th>
-                                <th scope='col' className='py-3 px-4'>Devision</th>
-                                <th scope='col' className='py-3 px-4'>District</th>
-                                <th scope='col' className='py-3 px-4'>Action</th>
+                                <th scope='col' className='py-3 px-4'>Quận</th>
+                                <th scope='col' className='py-3 px-4'>Huyện</th>
+                                <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>
                         </thead>
                         <tbody className='text-sm font-normal'>

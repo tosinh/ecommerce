@@ -37,7 +37,7 @@ const SellerDetails = () => {
                         <div className='w-3/12 flex justify-center items-center py-3'>
                             <div>
                                 {
-                                    seller?.image ? <img className='w-full h-[230px]' src="http://localhost:3000/images/admin.jpg" alt="" /> : <span>Image not uploaded</span>
+                                    seller?.image ? <img className='w-full h-[230px]' src="http://localhost:3000/images/admin.jpg" alt="" /> : <span>Ảnh chưa được Upload</span>
                                 }
 
                             </div>
@@ -45,11 +45,11 @@ const SellerDetails = () => {
                         <div className='w-4/12'>
                             <div className='px-0 md:px-5 py-2'>
                                 <div className='py-2 text-lg'>
-                                    <h2>Basic Info</h2>
+                                    <h2>Thông tin cơ bản</h2>
                                 </div>
                                 <div className='flex justify-between text-sm flex-col gap-2 p-4 bg-slate-800 rounded-md'>
                                     <div className='flex gap-2'>
-                                        <span>Name : </span>
+                                        <span>Tên : </span>
                                         <span>{seller?.name}</span>
                                     </div>
                                     <div className='flex gap-2'>
@@ -57,15 +57,15 @@ const SellerDetails = () => {
                                         <span>{seller?.email}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>Role : </span>
+                                        <span>Chức vụ : </span>
                                         <span>{seller?.role}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>Status : </span>
+                                        <span>Trạng thái : </span>
                                         <span>{seller?.status}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>Payment Account : </span>
+                                        <span>Tài khoản thanh toán : </span>
                                         <span>{seller?.payment}</span>
                                     </div>
                                 </div>
@@ -74,23 +74,23 @@ const SellerDetails = () => {
                         <div className='w-4/12'>
                             <div className='px-0 md:px-5 py-2'>
                                 <div className='py-2 text-lg'>
-                                    <h2>Address</h2>
+                                    <h2>Địa chỉ</h2>
                                 </div>
                                 <div className='flex justify-between text-sm flex-col gap-2 p-4 bg-slate-800 rounded-md'>
                                     <div className='flex gap-2'>
-                                        <span>Shop Name : </span>
+                                        <span>Tên shop : </span>
                                         <span>{seller?.shopInfo?.shopName}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>Division : </span>
+                                        <span>Chức vụ : </span>
                                         <span>{seller?.shopInfo?.division}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>District : </span>
+                                        <span>Địa chỉ : </span>
                                         <span>{seller?.shopInfo?.district}</span>
                                     </div>
                                     <div className='flex gap-2'>
-                                        <span>Sub-District : </span>
+                                        <span>Khu : </span>
                                         <span>{seller?.shopInfo?.sub_district}</span>
                                     </div>
                                 </div>
@@ -101,11 +101,11 @@ const SellerDetails = () => {
                         <form onSubmit={submit}>
                             <div className='flex gap-4 py-3'>
                                 <select value={status} onChange={(e) => setStatus(e.target.value)} className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]' name="" required id="">
-                                    <option value="">--select status--</option>
+                                    <option value="">--Chọn trạng thái--</option>
                                     <option value="active">Active</option>
                                     <option value="deactive">Deactive</option>
                                 </select>
-                                <button className='bg-blue-500 hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-md px-7 py-2 w-[170px] '>Submit</button>
+                                <button className='bg-blue-500 hover:shadow-blue-500/50 hover:shadow-lg text-white rounded-md px-7 py-2 w-[170px] '>Gửi (submit)</button>
                             </div>
                         </form>
                     </div>

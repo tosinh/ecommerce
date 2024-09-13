@@ -125,7 +125,7 @@ const Reviews = ({ product }) => {
           </div>
         </div>
       </div>
-      <h2 className='text-slate-600 text-xl font-bold py-5'>Product Reviews {totalReview}</h2>
+      <h2 className='text-slate-600 text-xl font-bold py-5'>Đánh giá sản phẩm {totalReview}</h2>
       <div className='flex flex-col gap-8 pb-10 pt-4'>
         {
           reviews.map((r, i) => <div key={i} className='flex flex-col gap-1'>
@@ -135,7 +135,7 @@ const Reviews = ({ product }) => {
               </div>
               <span className='text-slate-600'>{r.date}</span>
             </div>
-            <span className='text-slate-600 text-md'>{r.name}</span>
+            <span className='text-xl font-medium text-slate-600 text-md'>{r.name}</span>
             <p className='text-slate-600 text-sm'>{r.review}</p>
           </div>)
         }

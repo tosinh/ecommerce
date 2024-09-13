@@ -41,8 +41,8 @@ const Login = () => {
         <div className='min-w-screen min-h-screen bg-[#161d31] flex justify-center items-center'>
             <div className='w-[350px] text-[#d0d2d6] p-2'>
                 <div className='bg-[#283046] p-4 rounded-md'>
-                    <h2 className='text-xl mb-3'>Welcome to e-commerce</h2>
-                    <p className='text-sm mb-3'>Please signin to your account and start your bussiness</p>
+                    <h2 className='text-xl mb-3'>Chào mừng tới website Hải tốt</h2>
+                    <p className='text-sm mb-3'>Vui lòng đăng nhập vào tài khoản của bạn và bắt đầu kinh doanh</p>
                     <form onSubmit={submit}>
                         <div className='flex flex-col w-full gap-1 mb-3'>
                             <label htmlFor="email">Email</label>
@@ -58,7 +58,7 @@ const Login = () => {
                             }
                         </button>
                         <div className='flex items-center mb-3 gap-3 justify-center'>
-                            <p>Already have an account ? <Link to='/register'>Signup here</Link></p>
+                            <p>Đã có tài khoản ? <Link to='/register'>Đăng ký tại đây</Link></p>
                         </div>
                         <div className='w-full flex justify-center items-center mb-3'>
                             <div className='w-[45%] bg-slate-700 h-[1px]'></div>

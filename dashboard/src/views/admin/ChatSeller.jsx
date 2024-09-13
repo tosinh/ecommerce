@@ -147,14 +147,14 @@ const ChatSeller = () => {
                                         }
                                     }) : <div className='w-full h-full flex justify-center items-center flex-col gap-2 text-white'>
                                         <span><BsEmojiSmile /></span>
-                                        <span>Select seller</span>
+                                        <span>Chọn seller</span>
                                     </div>
                                 }
                             </div>
                         </div>
                         <form onSubmit={send} className='flex gap-3'>
                             <input value={text} onChange={(e) => setText(e.target.value)} readOnly={sellerId ? false : true} className='w-full flex justify-between px-2 border border-slate-700 items-center py-[5px] focus:border-blue-500 rounded-md outline-none bg-transparent text-[#d0d2d6]' type="text" placeholder='input your message' />
-                            <button disabled={sellerId ? false : true} className='shadow-lg bg-cyan-500 hover:shadow-cyan-500/50 text-semibold w-[75px] h-[35px] rounded-md text-white flex justify-center items-center'>Send</button>
+                            <button disabled={sellerId ? false : true} className='shadow-lg bg-cyan-500 hover:shadow-cyan-500/50 text-semibold w-[75px] h-[35px] rounded-md text-white flex justify-center items-center'>Gửi</button>
                         </form>
                     </div>
                 </div>

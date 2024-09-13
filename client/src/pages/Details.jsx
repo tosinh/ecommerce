@@ -216,7 +216,7 @@ const Details = () => {
                                     product.discount !== 0 ? <>
                                         <h2 className='line-through'>${product.price}</h2>
                                         <h2>${product.price - Math.floor((product.price * product.discount) / 100)} (-{product.discount}%)</h2>
-                                    </> : <h2>Gias : ${product.price}</h2>
+                                    </> : <h2>Giá : ${product.price}</h2>
                                 }
                             </div>
                             <div className='text-slate-600'>

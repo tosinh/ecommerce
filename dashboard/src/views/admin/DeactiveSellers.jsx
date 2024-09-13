@@ -34,21 +34,21 @@ const DeactiveSellers = () => {
                         <option value="5">15</option>
                         <option value="5">25</option>
                     </select>
-                    <input onChange={e => setSearchValue(e.target.value)} value={searchValue} className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]' type="text" placeholder='search' />
+                    <input onChange={e => setSearchValue(e.target.value)} value={searchValue} className='px-4 py-2 focus:border-indigo-500 outline-none bg-[#283046] border border-slate-700 rounded-md text-[#d0d2d6]' type="text" placeholder='Tìm kiếm' />
                 </div>
                 <div className='relative overflow-x-auto'>
                     <table className='w-full text-sm text-left text-[#d0d2d6]'>
                         <thead className='text-xs text-[#d0d2d6] uppercase border-b border-slate-700'>
                             <tr>
-                                <th scope='col' className='py-3 px-4'>No</th>
-                                <th scope='col' className='py-3 px-4'>Image</th>
-                                <th scope='col' className='py-3 px-4'>Name</th>
-                                <th scope='col' className='py-3 px-4'>Shop Name</th>
-                                <th scope='col' className='py-3 px-4'>Payment Status</th>
+                                <th scope='col' className='py-3 px-4'>STT</th>
+                                <th scope='col' className='py-3 px-4'>Ảnh</th>
+                                <th scope='col' className='py-3 px-4'>Tên</th>
+                                <th scope='col' className='py-3 px-4'>Tên Shop</th>
+                                <th scope='col' className='py-3 px-4'>Trạng thái thanh toán</th>
                                 <th scope='col' className='py-3 px-4'>Email</th>
-                                <th scope='col' className='py-3 px-4'>Devision</th>
-                                <th scope='col' className='py-3 px-4'>District</th>
-                                <th scope='col' className='py-3 px-4'>Action</th>
+                                <th scope='col' className='py-3 px-4'>Quận</th>
+                                <th scope='col' className='py-3 px-4'>Huyện</th>
+                                <th scope='col' className='py-3 px-4'>Thao tác</th>
                             </tr>
                         </thead>
                         <tbody className='text-sm font-normal'>

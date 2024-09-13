@@ -38,11 +38,11 @@ const Orders = () => {
                     <div className='w-full text-sm text-left [#d0d2d6]'>
                         <div className='text-sm text-[#d0d2d6] uppercase border-b border-slate-700'>
                             <div className='flex justify-between items-start'>
-                                <div className='py-3 w-[25%]'>Order Id</div>
-                                <div className='py-3 w-[13%]'>Price</div>
-                                <div className='py-3 w-[18%]'>Payment Status</div>
-                                <div className='py-3 w-[18%]'>Order Status</div>
-                                <div className='py-3 w-[18%]'>Action</div>
+                                <div className='py-3 w-[25%]'>ID đơn hàng</div>
+                                <div className='py-3 w-[13%]'>Giá</div>
+                                <div className='py-3 w-[18%]'>Trạng thái thanh toán</div>
+                                <div className='py-3 w-[18%]'>Trạnh thái đơn hàng</div>
+                                <div className='py-3 w-[18%]'>Thao tác</div>
                                 <div className='py-3 w-[8%]'>
                                     <MdKeyboardArrowDown />
                                 </div>
