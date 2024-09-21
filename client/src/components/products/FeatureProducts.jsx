@@ -53,7 +53,7 @@ const FeatureProducts = ({ products }) => {
             <div className='w-full'>
                 <div className='text-center flex justify-center items-center flex-col text-4xl text-slate-600 font-bold relative pb-[45px]'>
                     <h2>Sản phẩm đặc trưng</h2>
-                    <div className='w-[100px] h-[4px] bg-[#7fad39] mt-4'></div>
+                    <div className='w-[100px] h-[4px] bg-[#ffb900] mt-4'></div>
                 </div>
             </div>
             <div className='w-full grid grid-cols-4 md-lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6'>

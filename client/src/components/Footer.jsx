@@ -20,8 +20,8 @@ const Footer = () => {
                         <img className='w-[190px] h-[70x]' src="http://localhost:3000/images/logo.png" alt="logo" />
                         <ul className='flex flex-col gap-2 text-slate-600'>
                             <li>Địa chỉ: phường 8, Tp. Đà Lạt</li>
-                            <li>Điện thoại : 0909090909</li>
-                            <li>Email : 211****@dlu.edu.vn</li>
+                            <li>Điện thoại : 0342940089</li>
+                            <li>Email : 2117000dlu.edu.vn</li>
                         </ul>
                     </div>
                 </div>
